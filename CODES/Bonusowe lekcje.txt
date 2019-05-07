@@ -1,0 +1,19 @@
+http://robots.thoughtbot.com/sasss-content-directive - content
+=respond-to($name)
+
+  @if $name == small-screen
+    @media only screen and (min-width: 320px)
+      @content
+
+  @if $name == large-screen
+    @media only screen and (min-width: 800px)
+      @content
+	  
+	  
+	  .column
+    width: 25%
+    +respond-to(small-screen)
+      width: 100%
+
+
+http://alwaystwisted.com/post.php?s=2014-03-08-using-sass-33s-at-root-for-piece-of-mind - at root

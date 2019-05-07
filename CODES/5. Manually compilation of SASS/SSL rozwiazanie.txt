@@ -1,0 +1,20 @@
+
+Niektórzy w windowsie mog¹ mieæ problem z SSL.
+
+Musisz wtedy zapisaæ ten plik:
+
+https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem
+
+pamiêtaj¹c o tym, aby zachowaæ rozszerzenie i zapisanie go tam gdzie masz zainstalowanego Ruby:
+
+C:\Ruby21\lib\ruby\2.1.0\rubygems\ssl_certs
+
+wtedy wszystko powinno dzia³aæ OK.
+
+Mo¿esz te¿ œci¹gn¹æ nie korzystaj¹c Z SSL:
+
+gem source -a http://rubygems.org/
+
+Wiêcej o problemie
+
+https://gist.github.com/luislavena/f064211759ee0f806c88
